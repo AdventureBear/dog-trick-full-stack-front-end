@@ -58,8 +58,11 @@ html, body {
 
 
 .content {
-    padding-top: 20px; /* Adjust based on the total height of the fixed navbar and sub-nav */
-
+    /*padding-top: 20px; !* Adjust based on the total height of the fixed navbar and sub-nav *!*/
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: left;
 }
 .cards-container {
     display: flex;
@@ -82,7 +85,7 @@ html, body {
 }
 
 
-.card-back{
+.card-back {
     background-color: #b322a3;
     cursor: pointer;
 }

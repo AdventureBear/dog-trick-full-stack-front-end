@@ -1,6 +1,6 @@
 import {PrismaClient}  from "@prisma/client";
 import {NextRequest, NextResponse} from "next/server";
-import trick from "../../../Trick";
+import trick from "../../../components/Trick";
 
 const prisma = new PrismaClient()
 
