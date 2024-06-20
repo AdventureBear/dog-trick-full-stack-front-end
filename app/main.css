@@ -108,6 +108,11 @@ html, body {
     transform: scale(1.10);
     background-color: #4169E1;
 }
+
+.formContainer {
+    margin-left: 20px;
+
+}
 @media (max-width: 600px) {
     .cardsContainer {
         grid-template-columns: 1fr;

@@ -1,0 +1,76 @@
+/* Basic reset for styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Use a basic, readable font */
+}
+/* If you're using the container approach, use this instead */
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjust width as necessary */
+    max-width: 500px; /* Maximum width of the form */
+    margin: 20px auto; /* Centering the form horizontally */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333; /* Dark grey color for text for better readability */
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    margin-bottom: 20px; /* Space between form elements */
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded borders for input and select */
+    font-size: 16px; /* Slightly larger font size for better readability */
+    width: calc(100% - 22px); /* Full width taking padding and border into account */
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #0056b3; /* Highlight color when the input is focused */
+    outline: none; /* Remove default focus outline */
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Blue background for the submit button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error {
+    color: #ff0000; /* Red color for error messages */
+    margin-bottom: 10px; /* Space above the submit button */
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    align-content: center;
+    justify-content: center;
+}

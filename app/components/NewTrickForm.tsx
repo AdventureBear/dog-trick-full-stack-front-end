@@ -5,7 +5,9 @@ import { useRouter } from 'next/navigation';
 import axios from 'axios';
 import { Category } from "@prisma/client";
 import { TrickType } from "../types";
-import "./Button.css"
+import "./Button.css";
+import "./NewTrickForm.css"
+
 import {createTrick, updateTrick} from "../lib/actions";
 
 function NewTrickForm({ trick }: { trick?: TrickType }) {
@@ -52,8 +54,10 @@ function NewTrickForm({ trick }: { trick?: TrickType }) {
     };
 
     return (
-        <div>
-            <h1>{trick ? "Edit Trick" : "Add a Trick"}</h1>
+        <div className="flex text-center">
+            <div className="title-container">
+             <h1>{trick ? "Edit Trick" : "Add a Trick"}</h1>
+            </div>
             <form onSubmit={handleSubmit} className="flex flex-col">
                 <div className="mb-2">
                     <label htmlFor="name">Name</label>

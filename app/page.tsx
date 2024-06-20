@@ -45,10 +45,10 @@ async function  App() {
 
   return (
       <>
-        <div className='main-nav'>
-          <h1>Find Your Next Trick</h1>
-          <p>The Ultimate Collection of Dog Tricks!</p>
-        </div>
+        {/*<div className='main-nav'>*/}
+        {/*  <h1>Find Your Next Trick</h1>*/}
+        {/*  <p>The Ultimate Collection of Dog Tricks!</p>*/}
+        {/*</div>*/}
 
         <AllTricks allTricks={allTricks}  />
 
